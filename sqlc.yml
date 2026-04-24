@@ -1,0 +1,12 @@
+version: 2
+sql:
+  - engine: "sqlite"
+    queries: "./database/queries/*.queries.sql"
+    schema: "./database/migrations/*.sql"
+    gen:
+      go:
+        package: "models"
+        out: "./models"
+        emit_json_tags: true
+        emit_prepared_queries: true
+        emit_interface: true
