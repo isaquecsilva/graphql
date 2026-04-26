@@ -93,8 +93,3 @@ Example response (abbreviated):
 - The repository also contains a warmup function that can insert sample rows programmatically; the migration files already include a seed migration that inserts sample cars. The Warmup function is available in code if you prefer to seed data programmatically.
 - If you see errors connecting to the DB, check `DATABASE_URI` and file permissions.
 - If you want to run a GraphQL playground during development, add or enable the playground handler in the server code (this repository may or may not include one by default).
-
-If you'd like, I can add:
-- Exact shell scripts to run all migrations in order on POSIX or Windows,
-- A small Go helper to automatically run all SQL files in `database/migrations` when starting the app,
-- Example GraphiQL/Playground configuration for local development.
